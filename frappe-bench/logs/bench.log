@@ -1,0 +1,180 @@
+2025-05-13 09:38:15,627 DEBUG cd frappe-bench && python3 -m venv env
+2025-05-13 09:38:18,973 DEBUG cd frappe-bench && /workspaces/library_management/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-05-13 09:38:20,871 DEBUG cd frappe-bench && /workspaces/library_management/frappe-bench/env/bin/python -m pip install --quiet wheel
+2025-05-13 09:38:22,062 LOG Getting frappe
+2025-05-13 09:38:22,062 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2025-05-13 09:38:26,703 LOG Installing frappe
+2025-05-13 09:38:26,704 DEBUG cd /workspaces/library_management/frappe-bench && /workspaces/library_management/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /workspaces/library_management/frappe-bench/apps/frappe 
+2025-05-13 09:39:06,835 DEBUG cd /workspaces/library_management/frappe-bench/apps/frappe && yarn install --check-files
+2025-05-13 09:39:26,165 DEBUG cd frappe-bench && bench build
+2025-05-13 09:39:26,345 INFO /home/codespace/.python/current/bin/bench build
+2025-05-13 09:39:49,983 LOG setting up backups
+2025-05-13 09:39:50,000 LOG backups were set up
+2025-05-13 09:39:50,000 INFO Bench frappe-bench initialized
+2025-05-13 09:40:22,899 INFO /home/codespace/.python/current/bin/bench new-site dev.localhost
+2025-05-13 09:40:47,138 INFO /home/codespace/.python/current/bin/bench new-site dev.localhost
+2025-05-13 09:44:27,392 INFO /home/codespace/.python/current/bin/bench drop-site dev.localhost --force
+2025-05-13 09:44:44,017 INFO /home/codespace/.python/current/bin/bench new-site dev.localhost
+2025-05-13 09:45:59,543 INFO /home/codespace/.python/current/bin/bench get-app library_management https://github.com/Aditilistic/library_management --branch develop
+2025-05-13 09:45:59,551 LOG Getting library_management
+2025-05-13 09:45:59,552 DEBUG cd ./apps && git clone https://github.com/Aditilistic/library_management --branch develop --depth 1 --origin upstream
+2025-05-13 09:46:00,287 LOG Installing library_management
+2025-05-13 09:46:00,288 DEBUG cd /workspaces/library_management/frappe-bench && /workspaces/library_management/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /workspaces/library_management/frappe-bench/apps/library_management 
+2025-05-13 09:46:02,307 DEBUG bench build --app library_management
+2025-05-13 09:46:02,444 INFO /home/codespace/.python/current/bin/bench build --app library_management
+2025-05-13 09:46:11,451 INFO /home/codespace/.python/current/bin/bench --site dev.localhost install-app library_management
+2025-05-13 09:46:20,822 INFO /home/codespace/.python/current/bin/bench start
+2025-05-13 09:46:21,765 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-13 09:46:21,803 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-13 09:46:21,806 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-13 09:46:21,856 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-13 09:49:43,962 INFO /home/codespace/.python/current/bin/bench use dev.localhost
+2025-05-13 09:49:51,053 INFO /home/codespace/.python/current/bin/bench start
+2025-05-13 09:49:51,767 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-13 09:49:51,800 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-13 09:49:51,817 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-13 09:49:51,829 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-13 09:54:38,484 INFO /home/codespace/.python/current/bin/bench start
+2025-05-13 09:54:39,216 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-13 09:54:39,379 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-13 09:54:39,384 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-13 09:54:39,387 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-13 14:07:38,418 INFO /home/codespace/.python/current/bin/bench start
+2025-05-13 14:07:40,126 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-13 14:07:40,221 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-13 14:07:40,265 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-13 14:07:40,290 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-13 14:12:40,876 INFO /home/codespace/.python/current/bin/bench start
+2025-05-13 14:13:53,590 INFO /home/codespace/.python/current/bin/bench start
+2025-05-13 14:16:03,059 INFO /home/codespace/.python/current/bin/bench start
+2025-05-13 14:16:03,786 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-13 14:16:03,899 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-13 14:16:03,904 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-13 14:16:03,962 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-13 14:18:08,260 INFO /home/codespace/.python/current/bin/bench start
+2025-05-13 14:18:31,097 INFO /home/codespace/.python/current/bin/bench start
+2025-05-13 14:18:31,716 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-13 14:18:31,810 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-13 14:18:31,833 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-13 14:18:31,837 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-13 14:29:34,563 INFO /home/codespace/.python/current/bin/bench init my-bench --frappe-branch version-13
+2025-05-13 14:29:34,617 DEBUG cd my-bench && python3 -m venv env
+2025-05-13 14:29:38,321 DEBUG cd my-bench && /workspaces/library_management/frappe-bench/my-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-05-13 14:29:40,413 DEBUG cd my-bench && /workspaces/library_management/frappe-bench/my-bench/env/bin/python -m pip install --quiet wheel
+2025-05-13 14:29:41,738 LOG Getting frappe
+2025-05-13 14:29:41,738 DEBUG cd my-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-13 --depth 1 --origin upstream
+2025-05-13 14:29:44,677 LOG Installing frappe
+2025-05-13 14:29:44,678 DEBUG cd /workspaces/library_management/frappe-bench/my-bench && /workspaces/library_management/frappe-bench/my-bench/env/bin/python -m pip install --quiet --upgrade -e /workspaces/library_management/frappe-bench/my-bench/apps/frappe 
+2025-05-13 14:29:48,679 WARNING /home/codespace/.python/current/bin/bench init my-bench --frappe-branch version-13 executed with exit code 1
+2025-05-13 14:30:19,173 INFO /home/codespace/.python/current/bin/bench new-site dev.localhost
+2025-05-13 14:30:50,496 INFO /home/codespace/.python/current/bin/bench use dev.localhost
+2025-05-13 14:30:55,643 INFO /home/codespace/.python/current/bin/bench start
+2025-05-13 14:33:09,913 INFO /home/codespace/.python/current/bin/bench restart
+2025-05-13 14:33:27,658 INFO /home/codespace/.python/current/bin/bench start
+2025-05-13 14:33:28,295 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-13 14:33:28,349 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-13 14:33:28,410 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-13 14:33:28,414 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-14 11:42:24,636 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 11:42:27,892 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-14 11:42:28,059 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-14 11:42:28,262 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-14 11:42:28,279 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-14 11:49:01,466 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 11:49:02,283 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-14 11:49:02,290 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-14 11:49:02,336 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-14 11:49:02,440 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-14 11:51:25,570 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 11:51:26,202 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-14 11:51:26,213 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-14 11:51:26,280 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-14 11:51:26,287 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-14 12:01:31,239 INFO /home/codespace/.python/current/bin/bench restart
+2025-05-14 12:01:36,451 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 12:01:36,998 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-14 12:01:37,189 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-14 12:01:37,231 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-14 12:01:37,283 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-14 12:03:09,546 INFO /home/codespace/.python/current/bin/bench restart
+2025-05-14 12:03:12,239 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 12:03:12,854 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-14 12:03:12,855 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-14 12:03:12,998 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-14 12:03:13,038 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-14 12:08:14,451 INFO /home/codespace/.python/current/bin/bench --version
+2025-05-14 12:08:38,284 INFO /home/codespace/.python/current/bin/bench restart
+2025-05-14 12:08:41,746 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 12:08:42,493 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-14 12:08:42,508 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-14 12:08:42,525 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-14 12:08:42,568 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-14 12:10:30,256 INFO /home/codespace/.python/current/bin/bench restart
+2025-05-14 12:10:33,320 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 12:10:33,749 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-14 12:10:33,997 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-14 12:10:34,082 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-14 12:10:34,186 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-14 12:11:44,413 INFO /home/codespace/.python/current/bin/bench restart
+2025-05-14 12:11:47,395 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 12:11:48,208 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-14 12:11:48,399 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-14 12:11:48,546 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-14 12:11:48,592 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-14 12:18:12,217 INFO /home/codespace/.python/current/bin/bench restart
+2025-05-14 12:18:12,633 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 12:18:13,389 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-14 12:18:13,413 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-14 12:18:13,417 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-14 12:18:13,498 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-14 12:22:30,843 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 12:22:37,334 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 12:28:00,520 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 12:30:55,909 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 12:32:58,896 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 12:32:59,530 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-14 12:32:59,532 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-14 12:32:59,665 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-14 12:32:59,715 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-14 12:36:10,069 INFO /home/codespace/.python/current/bin/bench use dev.localhost
+2025-05-14 12:36:15,660 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 12:36:16,307 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-14 12:36:16,358 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-14 12:36:16,431 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-14 12:36:16,515 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-14 12:37:21,836 INFO /home/codespace/.python/current/bin/bench --site dev.localhost doctor
+2025-05-14 12:39:20,993 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 12:42:48,681 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 12:45:10,949 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 12:45:11,709 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-14 12:45:11,766 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-14 12:45:11,799 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-14 12:45:11,866 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-14 12:51:39,270 INFO /home/codespace/.python/current/bin/bench --site dev.localhost migrate
+2025-05-14 12:51:44,731 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 12:51:45,213 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-14 12:51:45,422 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-14 12:51:45,660 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-14 12:51:45,667 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-14 12:52:41,879 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 12:52:42,485 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-14 12:52:42,532 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-14 12:52:42,755 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-14 12:52:42,760 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-14 12:56:05,744 INFO /home/codespace/.python/current/bin/bench --site dev.localhost reinstall
+2025-05-14 12:57:29,843 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 12:57:30,226 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-14 12:57:30,518 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-14 12:57:30,676 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-14 12:57:30,688 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-14 13:09:32,196 INFO /home/codespace/.python/current/bin/bench --site dev.localhost install-app library_management
+2025-05-14 13:09:37,849 INFO /home/codespace/.python/current/bin/bench start
+2025-05-14 13:09:38,445 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-14 13:09:38,620 INFO /home/codespace/.python/current/bin/bench watch
+2025-05-14 13:09:38,799 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-14 13:09:38,804 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-15 17:09:05,643 INFO /home/codespace/.python/current/bin/bench start
+2025-05-15 17:09:06,734 INFO /home/codespace/.python/current/bin/bench serve --port 8000
+2025-05-15 17:09:07,112 INFO /home/codespace/.python/current/bin/bench schedule
+2025-05-15 17:09:07,174 INFO /home/codespace/.python/current/bin/bench worker
+2025-05-15 17:09:07,216 INFO /home/codespace/.python/current/bin/bench watch
